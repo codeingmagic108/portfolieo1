@@ -1,0 +1,49 @@
+.accessbility-list{
+    width:100%;
+    height:80vh;
+}
+.accessbility-list1{
+    width:100%;
+    /* height:100%; */
+    padding:5vh 20vw 5vh 20vw;
+}
+.accessbility-list1 h1{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+.accessbility-list1 h2{
+    font-size: 1.2rem;
+    font-weight: 480;
+}
+.accessbility-list1 p{
+    font-size:.9rem;
+    font-weight: 300;
+}
+.accessbility-list1 ul{
+    /* list-style: none; */
+    padding-left:3vw;
+
+}
+.accessbility-list1 li{
+    font-size: .9rem;
+    font-weight: 300;
+}
+.accessbility-list1 h3{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top:3vh;
+}
+@media (width<700) {
+    .accessbility-list{
+        position:relative;
+        width:100%;
+        height:100vh;
+        padding:0 0 0 0;
+
+    }
+}
+@media (width<660) {
+    .accessbility-list{
+        top:-35vh;
+    }
+}

@@ -1,0 +1,45 @@
+.policy-container{
+    padding:4vh 15vw 4vh 15vw;
+}
+.policy-list{
+    width:100%;
+
+}
+.policy-list h1{
+    text-align:center;
+    padding-bottom:20px;
+    font-size:2.2rem;
+    font-weight: 700;
+}
+.policy-list h2{
+    font-size:1.2rem;
+    font-weight: 600;
+}
+.policy-list p{
+    font-size: .8rem;
+    font-weight: 200;
+}
+.policy-list .h3{
+    font-size: .9rem;
+    font-weight: 500;
+    padding-right:10px;
+    /* text-decoration: underline; */
+}
+.policy-list ul{
+    list-style:none;
+}
+.policy-list ul li{
+    font-size: .8rem;
+}
+.policy-list .hr{
+    border:1px solid black;
+    width:100%;
+    margin-top:15px;
+    margin-right:15px;
+}
+/* @media (width<610) {
+    .policy-list{
+        width:100%;
+        position: relative;
+    }
+} */
