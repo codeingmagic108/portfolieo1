@@ -49,20 +49,21 @@
 }
 .about .about-box .left .text{
     font-size: .9em;
-    /* display: flex; */
+    /* display:flex; */
     z-index: 800;
-}
-.about .about-box .left .text .typeing{
-    font-size:1.2em;
-    margin-left: .3em;
-    white-space: nowrap;
-    color:linear-gradient(135deg, #2afadf 10%, #c346c2 100%);
-    overflow: hidden;
-    border-right:3px solid linear-gradient(135deg, #2afadf 10%, #c346c2 100%);
-    animation:typeing 6s steps(16) 0.2s infinite;
 
 }
-@keyframes typeing{
+.about .about-box .left .text .typeing-text{
+    /* font-size:1em; */
+    margin-left: .3em;
+    /* white-space: nowrap; */
+    /* color: #000000; */
+    /* overflow: hidden; */
+    /* border-right:3px solid #000000; */
+    /* animation:typeing 7s steps(16) 0.2s infinite; */
+
+}
+/* @keyframes typeing{
     0%{
         width:0ch;
     }
@@ -73,7 +74,7 @@
         width: 0ch;
         }
 
-}
+} */
 .about .about-box .left button{
     margin:.8em .3em 1em .3em;
     padding:1.4em .2em 1.4em .2em;
@@ -85,11 +86,11 @@
 }
 
 .about .about-box .left button:hover{
-    font-size: 13.5px;
+    /* font-size:1em; */
     /* background-color: red; */
     background: linear-gradient(135deg, #2afadf 10%, #c346c2 100%);
     color:#ffffff;
-    transition:font-size 1s ease-in-out 0.2s;
+    transition:font-size 1s linear 0.2s;
 }
 .about .about-box .left button:visited{
     color:#ffffff;

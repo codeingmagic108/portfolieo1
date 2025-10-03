@@ -17,21 +17,14 @@ export default function Navbar() {
         <label for='check' id='crossbtn'><i class="fa-solid fa-xmark"></i></label>
         <label class='name'><i class="fa-solid fa-user-tie"></i>DHEERAJ KUMAR</label>
                 <ul>
-                  <li><Link to={"/Home"}>Home</Link></li>
-                  <li><Link to={"/Resume"}>Resume</Link></li>
-                  <li><Link to={"/Projects"}>Projects</Link></li>
-                  <li><Link to={"/Contacts"}>Contacts</Link></li>
+                  <li><Link class='Link' to={"/"}>Home</Link></li>
+                  <li ><p>|</p></li>
+                  <li><Link class='Link' to={"/Resume"}>Resume</Link></li>
+                  <li ><p>|</p></li>
+                  <li><Link  class='Link'to={"/Projects"}>Projects</Link></li>
+                  <li ><p>|</p></li>
+                  <li><Link class='Link' to={"/Contacts"}>Contacts</Link></li>
                 </ul>
-      
-        {/* <ul>
-          <li><Link  href='#'>Home</Link></li>
-          <li ><p>|</p></li>
-          <li><a  href='#'>Resume</a></li>
-          <li ><p>|</p></li>
-          <li><a href='#'>Projects</a></li>
-          <li ><p>|</p></li>
-          <li><a href='#'>contact</a></li>
-        </ul> */}
       </nav>
     </div>
   )

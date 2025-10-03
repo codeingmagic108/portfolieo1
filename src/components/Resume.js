@@ -9,8 +9,8 @@ export default function Resume() {
         <h1 class='resume-title'>Dheeraj Kumar</h1>
         <ul class='contact-info'>
           <li><number>+91 7070109201</number></li>
-          <li><i class="fa-brands fa-github"></i><a href="https://github.com/codeingmagic108">GitHub</a></li>
-          <li><i class="fa-brands fa-linkedin  circle12"></i><a href="https://www.linkedin.com/in/dheeraj-kumar-123456789/">LinkedIn</a></li>
+          <li><i class="fa-brands fa-github"></i><a href="https://github.com/codeingmagic108" target="_blank" >GitHub</a></li>
+          <li><i class="fa-brands fa-linkedin  circle12"></i><a href="https://www.linkedin.com/in/codeing-magic-380038252/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrO07WhaoRrqUUHwboBMb3A%3D%3D" target="_blank" >LinkedIn</a></li>
           <li><i class="fa-solid fa-envelope"></i><email>dheerajkumarcpr94@gmail.com</email></li>
         </ul>
         <h2>Career Objective</h2>

@@ -37,9 +37,10 @@
     margin-top:15px;
     margin-right:15px;
 }
-/* @media (width<610) {
+@media (width<660px) {
     .policy-list{
         width:100%;
         position: relative;
+        top:-35vh;
     }
-} */
+}

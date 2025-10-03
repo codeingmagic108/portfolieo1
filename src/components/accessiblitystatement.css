@@ -1,6 +1,6 @@
 .accessbility-list{
     width:100%;
-    height:80vh;
+    /* height:70vh; */
 }
 .accessbility-list1{
     width:100%;
@@ -10,6 +10,7 @@
 .accessbility-list1 h1{
     font-size: 1.8em;
     font-weight: 600;
+    text-align: center;
 }
 .accessbility-list1 h2{
     font-size: 1.2rem;
@@ -33,17 +34,19 @@
     font-weight: 600;
     margin-top:3vh;
 }
-@media (width<700) {
+@media (width<700px) {
     .accessbility-list{
         position:relative;
         width:100%;
-        height:100vh;
-        padding:0 0 0 0;
 
     }
+    .accessbility-list .accessbility-list1{
+        padding:5vh 5vh 5vh 5vh;
+    }
 }
-@media (width<660) {
+@media (width<660px) {
     .accessbility-list{
         top:-35vh;
+        /* padding-bottom:3vh; */
     }
 }

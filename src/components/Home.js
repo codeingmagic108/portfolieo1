@@ -1,8 +1,5 @@
 import React from 'react'
 import home from './home.css';
-// import Resume from './Resume'
-// import Projects from './Projects'
-// import Contacts from './Contacts'
 
 export default function Home() {
   return (
@@ -11,10 +8,12 @@ export default function Home() {
         <span class='left'>
             <span class='h11'>Hello</span><br/>
             <span class='h22'>I’m Dheeraj</span><br/>
-            <span class='text'>Building responsive, user-friendly websites 
+            <div class='text'>Building responsive, user-friendly websites 
               with clean code and creative flair. I'm a passionate
-               <span class='typeing'> web developer...</span>
-               </span><br/>
+               <span class='typeing-text'>
+                <span>web developer...</span>
+               </span>
+               </div><br/>
             <span class='btn'>
             <button class='bt1' type='submit' name='resume'>Resume</button>
             <button class='bt2' type='submit' name='projects' >Projects</button>
