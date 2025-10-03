@@ -1,7 +1,6 @@
 {
-  "homepage": "https://codeingmagic108.github.io/portfolio1",
-
-  "name": "portfolieo",
+  "homepage": "https://codeingmagic108.github.io/portfolieo1",
+  "name": "portfolieo1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,14 +18,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-      "predeploy": "npm run build",
-     "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  }
-,
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
