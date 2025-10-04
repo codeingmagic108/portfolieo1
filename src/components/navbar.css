@@ -1,151 +1,124 @@
-nav{
-    width:100%;
+.navbar{
+    display:flex;;
     height:7vh;
-    background-color:#EEEEEE;
-    position: relative;
-;
-}
-nav .name i{
-    font-size:18px;
-    line-height: 7vh;
-    margin-right:10px;
-}
-nav .name{
-    line-height:7vh;
-    margin-left:20px;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: 650;
-    opacity:0.9;
-}
-nav .name:hover{
-    color:#3f0f0f;
-    /* background-color: #E4E0E1; */
-    opacity:1;
-}
-nav ul{
-    float:right;
-    display: flex;
-    list-style:none;
-    font-size:15px;
-    color:#000000;
-    /* right:7px; */
-}
-nav ul li{
-    line-height: 7vh;
-    margin:0 9px;
-    
-    /* background-color: yellow; */
-}
-nav ul li p{
-    font-size:30px;
-    font-weight: 300;
+    width:100%;
+    position:sticky;
+    top:0;
+    background-color: #EEEEEE;
+    z-index:999;
 }
 
-nav ul li .Link{
-    text-decoration:none;
-    padding: 4.5px 10px 4.5px 5px;
-    border-radius: 5px;
-    color:black;
-
-    /* background-color: #896C6C; */
-    transition:all 0.5s ease 0.1s;
-
+.navbar-container{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width:100%;
+    padding:0 2rem;
 }
-nav ul li .Link:hover{
-    /* color:white; */
-    background-color: #896C6C;
-}
-nav ul li .Link:active{
-    color:red;
+
+.navbar-logo{
+    font-size:1.5rem;
     font-weight: 600;
-    /* background-color: blueviolet; */
-    /* font-size: 30px; */
+    color:black;
+    text-decoration: none;
+    cursor:pointer;
 }
-nav ul li .Link:visited{
-    color:#4F200D;
-    font-weight: 400;
+.navbar-container .navbar-menu{
+    display:flex;
+    text-align: center;
+    list-style:none;  
 }
-nav #crossbtn{
-    font-size: 25px;
-    position: absolute;
-    place-items: center;
-    right:20px;
-    top:5px;
+.navbar-container .navbar-menu li{
+    padding-top:3px;
+    padding-bottom:3px;
+    margin-right:1vw;
+}
+.navbar-container .navbar-menu li a{
+    text-decoration: none;
+    color:black;
+    font-size:1rem;
+    font-weight:500;
+    padding:3px 10px 3px 10px;
+    border-radius: 10px;
+    border:2px solid transparent;
+    transition: all 0.7s ease;
+}
 
-    display: none;
-
+.navbar-container .navbar-menu li a:hover{
+    color:white;
+    background: rgba(95, 22, 22, 0.8);
+    /* border:2px solid #162530; */
+}
+.navbar-container .navbar-menu li a:active{
+    color:aqua;
 }
 
-nav #checkbtn{
-    float:right;
-    line-height: 7vh;
-    font-size:25px;
-    display: none;
-    transition: all .5s linear .2s;
+.navbar-toggle{
+    display:none;
+    background:transparent;
+    padding:10px;
+    border:none;
+    cursor:pointer;
 }
-nav #crossbtn,#checkbtn:hover{
-    color:#3f0f0f;
-    font-size: 26px;
-    background-color: #ffffff;
+.bar{
+    display:block;
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    background:#000;
+    color:white;
+    transition:all 0.5s ease-in-out;
+}
+
+
+@media (max-width: 660px) {
+    .navbar{
+        backdrop-filter:none;
     }
-nav #crossbtn, #checkbtn:active{
-    color:white;
-    background-color: black;
-}
-nav #crossbtn:visited{
-    color:white;
-    background-color: black;
-}
-nav #check{
-    display:none;
-}
-#check:checked ~ ul{
-    left:0;
-}
-#check:checked ~ #crossbtn{
-    display: block;
-}
-input:checked ~ #checkbtn{
-    display:none;
-}
-
-@media(width<660px){
-    nav ul{
-        width:100%;
-        height:35vh;
-        background-color:#ffffff;
-        box-shadow: 0px 3px 5px rgb(93, 74, 74), -3px -3px 5px rgb(57, 57, 64);
+    .navbar-container .navbar-menu{
+        display:none;
         flex-direction: column;
-        align-items: center;
-        position: relative;
-        left:-102%;
-        z-index: 900;
-        transition: all 1s ease 0.2s;
+        align-items: flex-start;
+        gap:1.7em !important;
+        position:absolute;
+        height:100vh;
+        width:250px;
+        top:0;
+        right:0;
+        padding:5rem 1.5rem;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+        backdrop-filter: blur(10px);
     }
-    nav p{
-        display: none;
+    .navbar-container .navbar-menu li:hover{
+        width:100%;
+        background-color: rgba(95, 22, 22, 0.9);
+        text-align: left;
     }
-    nav ul li{
-        /* background-color: chartreuse; */
-        margin:5px 0px 0px 0px;
-        
+    .navbar-container .navbar-menu.active{
+        display:flex;
     }
-    nav #checkbtn{
-        display: block;
-        margin-right:20px;
-        height:7vh;
-    }
-   
-}
-@media (width<300px) {
-     nav .name{
-        font-size:6vw ;
-    }
-}
-@media (width<200px) {
-     nav .name{
-        font-size:3vw ;
-    }
-}
+    .navbar-toggle{
+        display:block;
+        z-index: 999;
+    } 
+    .navbar-toggle.active .bar:nth-child(2){
+        opacity:0;
 
+    }
+    .navbar-toggle.active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+    .navbar-toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+@media (width<320px) {
+    .navbar-logo{
+        font-size: 1rem;
+    }
+}
+@media (width<254px) {
+    .navbar-logo{
+        font-size: 5vw;
+    }
+}

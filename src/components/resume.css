@@ -1,7 +1,7 @@
 
 .resume {
     width:100%;
-    padding:3vh 13% 3vh 13%;
+    padding:3vh 13vw 3vh 13vw;
 }
 .resume h1{
     width:100%;
@@ -85,12 +85,6 @@
 .resume .non-heading{
     font-size:.7rem;
 }
-}
-@media (width<660px) {
-    .resume{
-        position:relative;
-        top: -35vh;
-    }
 }
 @media (width<540px) {
     .resume .contact-info{

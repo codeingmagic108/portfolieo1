@@ -328,7 +328,7 @@
 @media (width<660px) {
     .about{
         position:relative;
-        top:-35vh;
+        top:0;
     }
 }
 @media (width<633px){
@@ -390,7 +390,7 @@
 @media (width<500px) {
     .about{
         position:relative;
-        top:-35vh;
+        top:0;
     }
     .about .about-box{
     width:100%;

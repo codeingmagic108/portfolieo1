@@ -44,9 +44,3 @@
         padding:5vh 5vh 5vh 5vh;
     }
 }
-@media (width<660px) {
-    .accessbility-list{
-        top:-35vh;
-        /* padding-bottom:3vh; */
-    }
-}

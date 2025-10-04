@@ -113,14 +113,6 @@
     margin-left:2vw;
     line-height:7vh;
 }
-
-
-@media (width<660px) {
-    .firstouter{
-        position:relative;
-        top:-35vh;
-    }
-}
 @media (width<460px) {
   .firstouter{
     position:relative;

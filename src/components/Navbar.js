@@ -1,30 +1,46 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import navbar from './navbar.css';
-import Home from './Home';
-import Resume from './Resume';
-import Projects from './Projects';
-import Contacts from './Contacts';
-
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
-export default function Navbar() {
+export default function () {
+ useEffect(() => {
+  const navbarToggle = document.querySelector('.navbar-toggle');
+  const navbarMenu = document.querySelector('.navbar-menu');
+
+  const handleClick = () => {
+    navbarToggle.classList.toggle('active');
+    navbarMenu.classList.toggle('active');
+  };
+
+  if (navbarToggle) {
+    navbarToggle.addEventListener('click', handleClick);
+  }
+
+  return () => {
+    if (navbarToggle) {
+      navbarToggle.removeEventListener('click', handleClick);
+    }
+  };
+}, []);
+
   return (
     <div>
-      <nav>
-        <input id='check' type='checkbox' name='menu' value=''/>
-        <label for='check' id='checkbtn'><i class="fa-solid fa-bars"></i></label>
-        <label for='check' id='crossbtn'><i class="fa-solid fa-xmark"></i></label>
-        <label class='name'><i class="fa-solid fa-user-tie"></i>DHEERAJ KUMAR</label>
-                <ul>
-                  <li><Link class='Link' to={"/"}>Home</Link></li>
-                  <li ><p>|</p></li>
-                  <li><Link class='Link' to={"/Resume"}>Resume</Link></li>
-                  <li ><p>|</p></li>
-                  <li><Link  class='Link'to={"/Projects"}>Projects</Link></li>
-                  <li ><p>|</p></li>
-                  <li><Link class='Link' to={"/Contacts"}>Contacts</Link></li>
-                </ul>
+      <nav className='navbar'>
+        <div class="navbar-container">
+          <a href="" class="navbar-logo">DHEERAJ KUMAR</a>
+          <button className="navbar-toggle">
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </button>
+          <ul className="navbar-menu">
+            <li><Link class="a" to="/">Home</Link></li>
+            <li><Link class="a" to="/Resume">Resume</Link></li>
+            <li><Link class="a" to="/Projects">Projects</Link></li>
+            <li><Link class="a" to="/Contact">Contact</Link></li>
+          </ul>
+        </div>
       </nav>
     </div>
   )

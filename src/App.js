@@ -14,8 +14,6 @@ import Accessiblitystatement from './components/Accessiblitystatement';
 function App() {
   return (
    <>
-   {/* <Home/> */}
-  
    <Router>
     
       <div>
@@ -25,7 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Resume" element={<Resume />} />
         <Route path="/Projects" element={<Projects />} />
-        <Route path="/Contacts" element={<Contacts />} />
+        <Route path="/Contact" element={<Contacts />} />
         <Route path='/Privacypolicy' element={<Privacypolicy/>} />
         <Route path='/Accessiblitystatement' element={<Accessiblitystatement/>} />
         
