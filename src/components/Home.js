@@ -1,5 +1,6 @@
 import React from 'react'
 import home from './home.css';
+import{Link} from 'react-router-dom'
 
 export default function Home() {
   return (
@@ -15,9 +16,9 @@ export default function Home() {
                </span>
                </div><br/>
             <span class='btn'>
-            <button class='bt1' type='submit' name='resume'>Resume</button>
-            <button class='bt2' type='submit' name='projects' >Projects</button>
-            <button class='bt3' type='submit' name='contact'>Contacts</button>
+            <button class='bt1' type='submit' name='resume'><Link to='/Resume'>Resume</Link></button>
+            <button class='bt2' type='submit' name='projects' ><Link to='/Projects'>Projects</Link></button>
+            <button class='bt3' type='submit' name='contact'><Link to='Contact'>Contacts</Link></button>
        
             </span>
              </span>

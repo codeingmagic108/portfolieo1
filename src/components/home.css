@@ -84,6 +84,10 @@
     font-size:.9em;
     border:1.9px solid #BCA9FC;
 }
+.about .about-box .left button a{
+    text-decoration: none;
+    color:black;
+}
 
 .about .about-box .left button:hover{
     /* font-size:1em; */

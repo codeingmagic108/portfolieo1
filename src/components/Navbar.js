@@ -28,7 +28,7 @@ export default function () {
     <div>
       <nav className='navbar'>
         <div class="navbar-container">
-          <a href="" class="navbar-logo">DHEERAJ KUMAR</a>
+          <a href="" class="navbar-logo"><i class="fa-solid fa-user-tie"></i>DHEERAJ KUMAR</a>
           <button className="navbar-toggle">
             <span className="bar"></span>
             <span className="bar"></span>
