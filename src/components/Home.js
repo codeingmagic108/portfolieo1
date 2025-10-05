@@ -1,5 +1,6 @@
 import React from 'react'
 import home from './home.css';
+import img1 from './dheeraj.png'
 import{Link} from 'react-router-dom'
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
             </span>
              </span>
         <span class='right'>
-          <img src='https://www.bing.com/th/id/OIP.na449fIsK7r2Iftg2_TP5wHaGr?w=204&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2' alt='dheeraj kumar'></img>
+          <img src={img1} alt="dheeraj kumar"></img>
         </span>
       </div>
     </div>
