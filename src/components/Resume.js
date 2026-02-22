@@ -32,9 +32,9 @@ export default function Resume() {
         <hr class='hrr1'/>
         <div class='project-list'>
         <ul>
-          <li><project>Project 1</project>: Portfolio Website</li>
-          <li><project>Project 2</project>: To-Do Website</li>
-          <li><project>Project 3</project>: Library Management System</li>
+          <li> Portfolio Website</li>
+          <li> To-Do Website</li>
+          <li> Library Management System</li>
         </ul>
         </div>
         <h2>Internships</h2>
