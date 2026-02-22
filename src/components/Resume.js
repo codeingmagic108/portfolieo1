@@ -47,9 +47,8 @@ export default function Resume() {
         <div class='education-list'>
         <p>Pursuing B.tech in computer science & Engineering from St.Andrews of Technology & Management,Grugram Haryana (2022-2026)</p>
         <br></br>
-        <p><education>Class 12<sup>th</sup>-BSEB, Rajendra College Chhapra,Saran.</education></p>
+        <p><education>Intermediate -BSEB, Rajendra College Chhapra,Saran.</education></p>
         <br></br>
-        {/* <p><education>Class 10<sup>th</sup>-Bihar School Examination Board - 65% (2018)</education></p> */}
         </div>
         <h2>Personal Details</h2>
         <hr class='hrr1'/>
