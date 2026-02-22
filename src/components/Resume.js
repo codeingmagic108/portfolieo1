@@ -15,37 +15,41 @@ export default function Resume() {
         </ul>
         <h2>Career Objective</h2>
         <hr class='hrr1'/>
-        <p>Motivated and details-oriented B.tech Computer Science student with strong foundation in programming and problem-solving. Seeking an internship opportunity to apply skills in real-world  projects and grow as a software developer.</p>
+        <p>I am an enthusiastic and dedicated aspiring Full Stack Software Engineer seeking to begin my career 
+              in an environment where I can effectively apply my frontend and backend development skills. My goal 
+               is to build scalable, secure, and user-friendly web applications that solve real-world problems while 
+                 continuously learning and contributing meaningfully to the growth of the organization.</p>
         
         <h2>Technical Skills</h2>
         <hr class='hrr1'/>
         <div class='skills'>
-        <span class='heading'>Programming Languages:</span><span class='non-heading'>C, C++, Java, JavaScript, HTML, CSS, React, Basic Python</span><br class='hrr1'/>
-        <span class='heading'>Frameworks/Libraries:</span><span class='non-heading'>React.js, Node.js</span><br class='hrr1'/>
-        <span class='heading'>Data Base:</span><span class='non-heading'>My Sql <span>|<br class='hrr1'/></span></span><span class='heading'>Tools:</span><span class='non-heading'>Git, GitHub, Visual Studio Code, AWS, Digital Ocean</span>
+        <span class='heading'>Programming Languages:</span><span class='non-heading'>JavaScript, Java, HTML, CSS, React, Node.Js, C, C++, Basic Python</span><br class='hrr1'/>
+        {/* <span class='heading'>Frameworks/Libraries:</span><span class='non-heading'>React.js, Node.js</span><br class='hrr1'/> */}
+        <span class='heading'>Data Base:</span><span class='non-heading'>My Sql, MongoDB <span>|<br class='hrr1'/></span></span>
+        <span class='heading'>Tools:</span><span class='non-heading'>Git, GitHub, Visual Studio Code, AWS, Digital Ocean</span>
         </div>
         <h2>Projects</h2>
         <hr class='hrr1'/>
         <div class='project-list'>
         <ul>
-          <li><project>Project 1</project>: Description of project 1</li>
-          <li><project>Project 2</project>: Description of project 2</li>
-          <li><project>Project 3</project>: Description of project 3</li>
+          <li><project>Project 1</project>: Portfolio Website</li>
+          <li><project>Project 2</project>: To-Do Website</li>
+          <li><project>Project 3</project>: Library Management System</li>
         </ul>
         </div>
         <h2>Internships</h2>
         <hr class='hrr1'/>
         <div class='internship-list'>
-        <p><internship>Internship 1</internship>: Description of internship 1</p>
+        <p><internship>Internship 1</internship>: Fresher</p>
         </div>
         <h2>Education</h2>
         <hr class='hrr1'/>
         <div class='education-list'>
         <p>Pursuing B.tech in computer science & Engineering from St.Andrews of Technology & Management,Grugram Haryana (2022-2026)</p>
         <br></br>
-        <p><education>Class 12<sup>th</sup>-BSEB, Rajendra College Chhapra,Saran - 70% (2020)</education></p>
+        <p><education>Class 12<sup>th</sup>-BSEB, Rajendra College Chhapra,Saran.</education></p>
         <br></br>
-        <p><education>Class 10<sup>th</sup>-Bihar School Examination Board - 65% (2018)</education></p>
+        {/* <p><education>Class 10<sup>th</sup>-Bihar School Examination Board - 65% (2018)</education></p> */}
         </div>
         <h2>Personal Details</h2>
         <hr class='hrr1'/>
