@@ -6,7 +6,7 @@ export default function Privacypolicy() {
     <div class='policy-container'>
         <div class='policy-list'>
             <h1>Privacy Policy</h1>
-            <h2>Effective Date:[insert Date]</h2>
+            <h2>Effective Date:[22/10/2025]</h2>
             <p>Thank you for visiting my portfolio website (the “Site”). Your privacy is important to me, and I am committed to protecting any personal information you may share while visiting.</p>
             <p>This Privacy Policy outlines how I collect, use, and safeguard your information.</p>
             <hr class="hr"/>
@@ -48,9 +48,9 @@ export default function Privacypolicy() {
             <h2>8. Contact</h2>
             <p>If you have any questions about this Privacy Policy, please contact me at:</p>
             <ul>
-                <li><span class='h3'>Name</span>[Your Name]</li>
-                <li><span class='h3'>Email:</span>[Your Email Address]</li>
-                <li><span class='h3'>Website:</span></li>
+                <li><span class='h3'>Name</span>DHEERAJ KUMAR</li>
+                <li><span class='h3'>Email:</span>dheerajkumarcpr94@gmail.com</li>
+                {/* <li><span class='h3'>Website:</span></li> */}
             </ul>
         </div>
     </div>
