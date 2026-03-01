@@ -29,6 +29,7 @@ export default function Projects() {
             <li>* Developed a responsive Library Management System using React.js, HTML5, CSS3, and JavaScript.</li>
             <li>* Implemented features like adding, editing, deleting, and searching books in the library.</li>
             <li>* Designed a clean and intuitive UI with local storage persistence for book data.</li>
+            <li>*Members ka data store karna (name, ID, contact details)</li>
           </ul>
         </div>
       </div>
