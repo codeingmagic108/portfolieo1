@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolieo1/static/css/main.4a5d8526.css",
+    "main.js": "/portfolieo1/static/js/main.7566c739.js",
+    "static/js/453.ca30f278.chunk.js": "/portfolieo1/static/js/453.ca30f278.chunk.js",
+    "static/media/dheeraj.png": "/portfolieo1/static/media/dheeraj.0c7e2d884a9d48e350c7.png",
+    "index.html": "/portfolieo1/index.html",
+    "main.4a5d8526.css.map": "/portfolieo1/static/css/main.4a5d8526.css.map",
+    "main.7566c739.js.map": "/portfolieo1/static/js/main.7566c739.js.map",
+    "453.ca30f278.chunk.js.map": "/portfolieo1/static/js/453.ca30f278.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a5d8526.css",
+    "static/js/main.7566c739.js"
+  ]
+}
