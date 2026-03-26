@@ -17,12 +17,23 @@ export default function Projects() {
             <li> <b>Impact:</b> Helped thousands of users stay updated with the latest government job opportunities and exam results, streamlining the job search process and reducing information overload.</li>
             <li> <b>Deployment:</b> Hosted on a live domain with robust version control and CI/CD practices using GitHub.</li>
           </ul>
-          <div style={{marginTop: '10px'}}>
+          <div style={{marginTop: '10px', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10px'}}>
             <a href="https://www.jobfind24.shop" target="_blank" rel="noreferrer">
               <button style={{padding: '8px 18px', background: '#007bff', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Visit Project</button>
             </a>
-            <a href="/synopsys_jobfind24COMPLETE-widthout-apendix.pdf" target="_blank" rel="noreferrer">
-              <button style={{padding: '8px 18px', background: '#28a745', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', marginLeft: '10px'}}>View Synopsis</button>
+            <a
+              href={
+                window.location.hostname === "localhost"
+                  ? "/synopsys_jobfind24COMPLETE-widthout-apendix.pdf"
+                  : "/portfolieo1/synopsys_jobfind24COMPLETE-widthout-apendix.pdf"
+              }
+              download
+              rel="noreferrer"
+            >
+              <button style={{padding: '8px 18px', background: '#ffc107', color: '#000', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Download Synopsis</button>
+            </a>
+            <a href="/synopsys_jobfind24COMPLETE-widthout-apendix.pdf" rel="noreferrer">
+              <button style={{padding: '8px 18px', background: '#28a745', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>View Synopsis</button>
             </a>
           </div>
         </div>
