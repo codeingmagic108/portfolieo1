@@ -23,6 +23,7 @@
 
 .projects ul{
     /* list-style:none; */
+    padding-left:4%;
 }
 
 @media (width<700px) {

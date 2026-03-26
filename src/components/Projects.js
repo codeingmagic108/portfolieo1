@@ -7,8 +7,9 @@ export default function Projects() {
       <div class='projects'>
         <h2><a href="https://www.jobfind24.shop" target="_blank" rel="noreferrer">JOBFIND24</a></h2><hr class='hrr1'/><hr class='hrr1'/>
         <div>
+          <p> <b>Description : </b> Jobfind24 is a comprehensive full-stack web platform designed to simplify the process of finding government jobs, exam results, admit cards, and answer keys for users across India.</p>
           <ul>
-            <li> <b>Jobfind24</b> is a comprehensive full-stack web platform designed to simplify the process of finding government jobs, exam results, admit cards, and answer keys for users across India.</li>
+            
             <li> The application delivers <b>real-time updates</b> and notifications, ensuring users never miss important opportunities or deadlines.</li>
             <li> <b>Advanced search and filtering</b> options allow users to quickly locate relevant job postings and exam information tailored to their qualifications and interests.</li>
             <li> <b>Secure user authentication</b> (JWT) and a dedicated <b>admin dashboard</b> enable personalized experiences and efficient content management.</li>
@@ -36,23 +37,34 @@ export default function Projects() {
               <button style={{padding: '8px 18px', background: '#28a745', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>View Synopsis</button>
             </a>
           </div>
-        </div>
+        </div><br></br>
         <h2><a href="https://codeingmagic108.github.io/portfolieo1/#/" target="_blank" rel="noreferrer">Portfolio Website</a></h2><hr class='hrr1'/><hr class='hrr1'/>
         <div>
+          <p><b>Tech Stack:</b> React.js, React Router, CSS, HTML, JavaScript.</p>
+          <p><b>Description:</b>This is a fully responsive personal portfolio website built using React.js. The site showcases my professional profile, resume, projects, and contact information in a clean and modern layout.</p>
           <ul>
-            <li> Developed a responsive personal portfolio using React.js, HTML5, CSS3, and JavaScript.</li>
-            <li> Showcased professional details including resume, projects, and contact form with clean UI/UX design.</li>
-            <li> Implemented dynamic routing and reusable components for scalability.</li>
-            <li> Deployed the project on GitHub Pages ensuring accessibility with a live URL.</li>
-            <li> Integrated contact form and social media links to enhance professional networking.</li>
+            <li> <b>Multi-Page Navigation:</b> Uses React Router for seamless navigation between Home, Resume, Projects, Contact, Privacy Policy, and Accessibility Statement pages.</li>
+            <li><b>Responsive Design:</b> The layout adapts to all screen sizes, ensuring a great user experience on both desktop and mobile devices.</li>
+            <li><b>Modular Components:</b> Each section (Navbar, Footer, Home, Resume, Projects, Contacts, etc.) is implemented as a reusable React component for maintainability and scalability.</li>
+            <li><b>Downloadable Resume:</b> Users can view and download my resume directly from the website.</li>
+            <li><b>Contact Form:</b> A simple contact form allows visitors to reach out easily.</li>
+            <li><b>Accessibility & Privacy:</b> Includes dedicated pages for privacy policy and accessibility statement.</li>
+            <li><b>Deployment:</b> The website is deployed on GitHub Pages for easy access and sharing.</li>
           </ul>
-        </div>
+        </div><br></br>
         <h2><a href="https://todo-list-project-sage.vercel.app" target="_blank" rel="noreferrer">To-Do Website</a></h2><hr class='hrr1'/><hr class='hrr1'/>
         <div>
+          <p><b>Tech Stack:</b> HTML5, CSS3, JavaScript.</p>
+          <p><b>Description:</b>A minimalist todo list web application built using pure HTML, CSS, and vanilla JavaScript. The app allows users to add, edit, complete, and delete tasks with a clean and intuitive interface. All todos are saved in the browser’s localStorage, so your list stays even after refreshing the page.</p>
+          <p><b>Key Features:</b></p>
           <ul>
-            <li> Developed a responsive To-Do application using HTML5, CSS3, and JavaScript.</li>
-            <li> Implemented task management features like adding, editing, deleting, and marking tasks as complete.</li>
-            <li> Designed a clean and intuitive UI with local storage persistence for task data.</li>
+            <li>Add new tasks with a single click or by pressing Enter.</li>
+            <li>Mark tasks as completed with a checkbox (strike-through effect).</li>
+            <li>Edit tasks by double-clicking on them.</li>
+            <li>Delete tasks instantly.</li>
+            <li>Persistent storage using localStorage—no backend required.</li>
+            <li>Responsive and user-friendly design.</li>
+
           </ul>
           <div style={{marginTop: '10px', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10px'}}>
             <a href="https://todo-list-project-sage.vercel.app/" target="_blank" rel="noreferrer">
@@ -74,14 +86,23 @@ export default function Projects() {
             </a>
           </div>
           
-        </div>
+        </div><br></br>
        <h2><a href="https://labrary-management-system-jamh.vercel.app/" target="_blank" rel="noreferrer">Library Management System</a></h2><hr class='hrr1'/><hr class='hrr1'/>
         <div>
+          <p><b>Tech Stack: </b> HTML, CSS (Bootstrap), JavaScript (jQuery), Owl Carousel</p>
+          <p><b>Description:</b> A comprehensive web-based system designed to automate and streamline the management of computer labs in educational institutions. The platform supports multiple user roles including administrators, instructors, technical staff, and students, providing each with tailored features and dashboards.</p>
+          <p><b>Key Features:</b></p>
           <ul>
-            <li> Developed a responsive Library Management System using React.js, HTML5, CSS3, and JavaScript.</li>
-            <li> Implemented features like adding, editing, deleting, and searching books in the library.</li>
-            <li> Designed a clean and intuitive UI with local storage persistence for book data.</li>
-            <li> Members ka data store karna (name, ID, contact details)</li>
+              <li>Lab Scheduling & Management: View lab details, schedules, and student allocations.</li>
+              <li>E-Learning: Access to digital learning resources and guides (e.g., MS Word, MS Excel).</li>
+              <li>Complaint Handling: Online complaint submission and tracking for lab issues.</li>
+              <li>Assignment Management: Assignment upload, tracking, and management for students and instructors.</li>
+              <li>Admin Dashboard: Manage announcements, assignments, complaints, courses, labs, profiles, and users.</li>
+              <li>Instructor Showcase: Display of instructor profiles with images.</li>
+              <li>Newsletter Subscription: Users can subscribe for updates and announcements.</li>
+              <li>Responsive UI: Built with Bootstrap for mobile and desktop compatibility.</li>
+              <li>Interactive Visuals: Carousels for banners, labs, courses, and instructors.</li>
+
           </ul>
 
           <div style={{marginTop: '10px', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10px'}}>
@@ -102,7 +123,7 @@ export default function Projects() {
             <a href="https://labrary-management-system-jamh.vercel.app/" rel="noreferrer">
               <button style={{padding: '8px 18px', background: '#28a745', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>View Synopsis</button>
             </a>
-          </div>
+          </div><br></br>
 
 
 
