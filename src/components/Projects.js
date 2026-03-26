@@ -87,6 +87,45 @@ export default function Projects() {
           </div>
           
         </div><br></br>
+
+        <h2><a href="https://calculator-viwj.vercel.app/" target="_blank" rel="noreferrer">Simple Calculator</a></h2><hr class='hrr1'/><hr class='hrr1'/>
+        <div>
+          <p><b>Tech Stack:</b> HTML5, CSS3, JavaScript.</p>
+          <p><b>Description:</b>A basic calculator web app that allows users to perform arithmetic operations like addition, subtraction, multiplication, division, percentage, and more. The interface is styled for a modern look and is fully interactive.</p>
+          <p><b>Key Features:</b></p>
+          <ul>
+            <li>Clickable buttons for digits, operators, and actions (AC, DEL, =)</li>
+            <li>Input field displays the current expression/result</li>
+            <li>Supports multi-digit and decimal calculations</li>
+            <li>"AC" clears all input, "DEL" removes the last character, "=" evaluates the expression</li>
+            <li>Responsive and visually appealing design using custom CSS</li>
+            <li>Responsive and user-friendly design.</li>
+
+          </ul>
+          <div style={{marginTop: '10px', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10px'}}>
+            <a href="https://calculator-viwj.vercel.app/" target="_blank" rel="noreferrer">
+              <button style={{padding: '8px 18px', background: '#007bff', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Visit Project</button>
+            </a>
+            <a
+              href={
+                window.location.hostname === "localhost"
+                  ? "https://calculator-viwj.vercel.app/"
+                  : "/https://calculator-viwj.vercel.app/"
+              }
+              download
+              rel="noreferrer"
+            >
+              <button style={{padding: '8px 18px', background: '#ffc107', color: '#000', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Download Synopsis</button>
+            </a>
+            <a href="https://calculator-viwj.vercel.app/" rel="noreferrer">
+              <button style={{padding: '8px 18px', background: '#28a745', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>View Synopsis</button>
+            </a>
+          </div>
+          
+        </div><br></br>
+
+
+
        <h2><a href="https://labrary-management-system-jamh.vercel.app/" target="_blank" rel="noreferrer">Library Management System</a></h2><hr class='hrr1'/><hr class='hrr1'/>
         <div>
           <p><b>Tech Stack: </b> HTML, CSS (Bootstrap), JavaScript (jQuery), Owl Carousel</p>
