@@ -24,21 +24,31 @@ export default function Navbar() {
   };
 }, []);
 
+  // Function to close sidebar
+  const closeSidebar = () => {
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navbarMenu = document.querySelector('.navbar-menu');
+    if (navbarToggle && navbarMenu) {
+      navbarToggle.classList.remove('active');
+      navbarMenu.classList.remove('active');
+    }
+  };
+
   return (
     <div>
       <nav className='navbar'>
-        <div class="navbar-container">
-          <a href="/" class="navbar-logo"><i class="fa-solid fa-user-tie"></i>DHEERAJ KUMAR</a>
+        <div className="navbar-container">
+          <a href="/" className="navbar-logo"><i className="fa-solid fa-user-tie"></i>DHEERAJ KUMAR</a>
           <button className="navbar-toggle">
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
           </button>
           <ul className="navbar-menu">
-            <li><Link class="a" to="/">Home</Link></li>
-            <li><Link class="a" to="/Resume">Resume</Link></li>
-            <li><Link class="a" to="/Projects">Projects</Link></li>
-            <li><Link class="a" to="/Contact">Contact</Link></li>
+            <li><Link className="a" to="/" onClick={closeSidebar}>Home</Link></li>
+            <li><Link className="a" to="/Resume" onClick={closeSidebar}>Resume</Link></li>
+            <li><Link className="a" to="/Projects" onClick={closeSidebar}>Projects</Link></li>
+            <li><Link className="a" to="/Contact" onClick={closeSidebar}>Contact</Link></li>
           </ul>
         </div>
       </nav>
