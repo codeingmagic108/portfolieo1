@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import navbar from './navbar.css';
+import './navbar.css';
 import {Link} from 'react-router-dom';
 
 
-export default function () {
+export default function Navbar() {
  useEffect(() => {
   const navbarToggle = document.querySelector('.navbar-toggle');
   const navbarMenu = document.querySelector('.navbar-menu');
@@ -28,7 +28,7 @@ export default function () {
     <div>
       <nav className='navbar'>
         <div class="navbar-container">
-          <a href="" class="navbar-logo"><i class="fa-solid fa-user-tie"></i>DHEERAJ KUMAR</a>
+          <a href="/" class="navbar-logo"><i class="fa-solid fa-user-tie"></i>DHEERAJ KUMAR</a>
           <button className="navbar-toggle">
             <span className="bar"></span>
             <span className="bar"></span>
@@ -45,3 +45,5 @@ export default function () {
     </div>
   )
 }
+
+
