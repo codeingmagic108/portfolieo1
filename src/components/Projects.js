@@ -50,7 +50,7 @@ export default function Projects() {
         <h2><a href="https://todo-list-project-sage.vercel.app" target="_blank" rel="noreferrer">To-Do Website</a></h2><hr class='hrr1'/><hr class='hrr1'/>
         <div>
           <ul>
-            <li> Developed a responsive To-Do application using React.js, HTML5, CSS3, and JavaScript.</li>
+            <li> Developed a responsive To-Do application using HTML5, CSS3, and JavaScript.</li>
             <li> Implemented task management features like adding, editing, deleting, and marking tasks as complete.</li>
             <li> Designed a clean and intuitive UI with local storage persistence for task data.</li>
           </ul>
