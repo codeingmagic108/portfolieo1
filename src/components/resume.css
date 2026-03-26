@@ -40,6 +40,10 @@
 .resume ul{
     list-style:none;
 }
+.resume .work-experience{
+    list-style-type: disc;
+    padding-left:6%;
+}
 .resume .contact-info{
     display:flex;
     margin:1px 0px 10px 0px;
