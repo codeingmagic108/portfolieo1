@@ -1,5 +1,5 @@
 import React from 'react'
-import './projects.css'
+import './projects.css';
 
 export default function Projects() {
   return (
@@ -47,7 +47,7 @@ export default function Projects() {
             <li> Integrated contact form and social media links to enhance professional networking.</li>
           </ul>
         </div>
-        <h2><a href="https://codeingmagic108.github.io/todo-list-project/" target="_blank" rel="noreferrer">To-Do Website</a></h2><hr class='hrr1'/><hr class='hrr1'/>
+        <h2><a href="httpshttps://todo-list-project-sage.vercel.app/" target="_blank" rel="noreferrer">To-Do Website</a></h2><hr class='hrr1'/><hr class='hrr1'/>
         <div>
           <ul>
             <li> Developed a responsive To-Do application using React.js, HTML5, CSS3, and JavaScript.</li>
