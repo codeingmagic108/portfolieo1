@@ -23,7 +23,7 @@ export default function Resume() {
         <h2>SKILLS</h2>
         <hr class='hrr1'/>
         <div class='skills'>
-        <span class='heading'>Language & Frameworks:</span><span class='non-heading'>JavaScript, Java, HTML, CSS, React.js, Node.js, C, C++, Basic Python</span><br class='hrr1'/>
+        <span class='heading'>Language & Frameworks:</span><span class='non-heading'>JavaScript, Java, HTML, CSS, React.js, Node.js,Express.js, C, C++, Basic Python</span><br class='hrr1'/>
         {/* <span class='heading'>Frameworks/Libraries:</span><span class='non-heading'>React.js, Node.js</span><br class='hrr1'/> */}
         <span class='heading'>Data Base:</span><span class='non-heading'>My Sql, MongoDB <span>|<br class='hrr1'/></span></span>
         <span class='heading'>Tools:</span><span class='non-heading'>Git, GitHub, Visual Studio Code, AWS, Digital Ocean</span>
