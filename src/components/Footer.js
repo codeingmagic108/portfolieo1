@@ -29,7 +29,7 @@ export default function Footer() {
             <div class='footer-content1'>
               <Link class='footer-a' to='/Privacypolicy'>Privacy Policy</Link><br/>
               <Link class='footer-a' to='/Accessiblitystatement'>Accessiblity Statement</Link>
-              <a href='dheeraj-resume5.pdf' target="_blank" rel="noreferrer" ><button class='footer-a1'>Download Resume</button></a>
+              <a href='dheeraj-resume7.pdf' target="_blank" rel="noreferrer" ><button class='footer-a1'>Download Resume</button></a>
             </div>
 
         </footer>
