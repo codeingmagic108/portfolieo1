@@ -75,7 +75,7 @@ export default function Projects() {
           </div>
           
         </div>
-       <h2><a href="https://codeingmagic108.github.io/library-management-system/" target="_blank" rel="noreferrer">Library Management System</a></h2><hr class='hrr1'/><hr class='hrr1'/>
+       <h2><a href="https://labrary-management-system-jamh.vercel.app/" target="_blank" rel="noreferrer">Library Management System</a></h2><hr class='hrr1'/><hr class='hrr1'/>
         <div>
           <ul>
             <li> Developed a responsive Library Management System using React.js, HTML5, CSS3, and JavaScript.</li>
@@ -83,6 +83,30 @@ export default function Projects() {
             <li> Designed a clean and intuitive UI with local storage persistence for book data.</li>
             <li> Members ka data store karna (name, ID, contact details)</li>
           </ul>
+
+          <div style={{marginTop: '10px', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10px'}}>
+            <a href="https://labrary-management-system-jamh.vercel.app/" target="_blank" rel="noreferrer">
+              <button style={{padding: '8px 18px', background: '#007bff', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Visit Project</button>
+            </a>
+            <a
+              href={
+                window.location.hostname === "localhost"
+                  ? "https://labrary-management-system-jamh.vercel.app/"
+                  : "/https://labrary-management-system-jamh.vercel.app/"
+              }
+              download
+              rel="noreferrer"
+            >
+              <button style={{padding: '8px 18px', background: '#ffc107', color: '#000', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Download Synopsis</button>
+            </a>
+            <a href="https://labrary-management-system-jamh.vercel.app/" rel="noreferrer">
+              <button style={{padding: '8px 18px', background: '#28a745', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>View Synopsis</button>
+            </a>
+          </div>
+
+
+
+
         </div>
       </div>
     </div>
