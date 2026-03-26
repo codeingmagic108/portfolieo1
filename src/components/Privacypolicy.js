@@ -40,7 +40,7 @@ export default function Privacypolicy() {
             <p>I take reasonable steps to protect your information but cannot guarantee absolute security, especially when information is transmitted over the internet.</p>
             <hr class="hr"/>
             <h2>6. Your Rights</h2>
-            <p>Depending on your location, you may have rights to access, correct, or delete your personal data. To make a request, please contact me at [Your Email Address].</p>
+            <p>Depending on your location, you may have rights to access, correct, or delete your personal data. To make a request, please contact me at dheerajkumarcpr94@gmail.com  .</p>
             <hr class="hr"/>
             <h2>7. Changes to This Policy</h2>
             <p>I may update this Privacy Policy from time to time. Changes will be posted on this page with a new effective date.</p>
