@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from './resume.css';
+import './resume.css';
 
 export default function Resume() {
   return (
@@ -9,8 +9,8 @@ export default function Resume() {
         <h1 class='resume-title'>DHEERAJ KUMAR</h1>
         <ul class='contact-info'>
           <li><number>+91 7070109201</number></li>
-          <li><i class="fa-brands fa-github"></i><a href="https://github.com/codeingmagic108" target="_blank" >GitHub</a></li>
-          <li><i class="fa-brands fa-linkedin  circle12"></i><a href="https://www.linkedin.com/in/codeing-magic-380038252/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrO07WhaoRrqUUHwboBMb3A%3D%3D" target="_blank" >LinkedIn</a></li>
+          <li><i class="fa-brands fa-github"></i><a href="https://github.com/codeingmagic108" target="_blank" rel="noreferrer" >GitHub</a></li>
+          <li><i class="fa-brands fa-linkedin  circle12"></i><a href="https://www.linkedin.com/in/codeing-magic-380038252/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrO07WhaoRrqUUHwboBMb3A%3D%3D" target="_blank" rel="noreferrer" >LinkedIn</a></li>
           <li><i class="fa-solid fa-envelope"></i><email>dheerajkumarcpr94@gmail.com</email></li>
         </ul>
         <h2>CAREER OBJECTIVE</h2>
@@ -32,10 +32,10 @@ export default function Resume() {
         <h2>PROJECTS</h2>
         <hr class='hrr1'/>
         <div class='project-list'>
-        <span class='heading'><u><i>Project Title:- </i></u> Jobfind24 |<a href="https://www.jobfind24.shop" target="_blank"> Visit Website</a> </span><br class='hrr1'/>
+        <span class='heading'><u><i>Project Title:- </i></u> Jobfind24 |<a href="https://www.jobfind24.shop" target="_blank" rel="noreferrer"> Visit Website</a> </span><br class='hrr1'/>
         <span class='heading'>Tech Stack:</span><span class='non-heading'>React.js, Node.js, Express.js, MongoDB, REST API, JWT Auth.</span><br class='hrr1'/>
         <span class='heading'>Description:</span><span class='non-heading'>  Developed a full-stack web application that aggregates and organizes government job notifications, exam results, admit cards, and answer keys. The platform features real-time updates, advanced search and filtering, user authentication, admin dashboard, and a responsive UI with dark/light mode. </span><br class='hrr1'/>
-        <span class='heading'><u><i>Project Title:- </i></u>Portfolio Website  |  <a href="https://codeingmagic108.github.io/portfolieo1/#/" target="_blank"> Visit Website</a> </span><br class='hrr1'/>
+        <span class='heading'><u><i>Project Title:- </i></u>Portfolio Website  |  <a href="https://codeingmagic108.github.io/portfolieo1/#/" target="_blank" rel="noreferrer"> Visit Website</a> </span><br class='hrr1'/>
         <span class='heading'>Tech Stack:</span><span class='non-heading'>HTML, CSS, JavaScript. </span><br class='hrr1'/>
         <span class='heading'>Description:</span><span class='non-heading'>Developed a modern, responsive portfolio website using React.js, showcasing personal projects, skills, and experience. Implemented reusable components, integrated a downloadable resume, and ensured cross-device compatibility with clean UI/UX design. Leveraged best practices in React development for maintainability and performance. </span><br class='hrr1'/>
         
