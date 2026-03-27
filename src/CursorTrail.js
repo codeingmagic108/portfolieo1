@@ -1,13 +1,13 @@
 import { useEffect, useRef } from "react";
 import "./cursorTrail.css";
 
-// Sleek, slightly thinner, swirling, neon smoke-like cursor trail with mobile touch support
+// Rocket-like trail: thick at the cursor, fading and thinning out behind, with a glowing, smoky, colorful effect
 export default function CursorTrail() {
   const canvasRef = useRef(null);
   const trails = useRef([]);
-  // Start cursor at (0,0)
   const mouse = useRef({ x: 0, y: 0 });
   const last = useRef({ x: 0, y: 0 });
+  const isTouching = useRef(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -21,10 +21,14 @@ export default function CursorTrail() {
     resize();
     window.addEventListener("resize", resize);
 
-    function onPointer(x, y) {
+    function onPointer(x, y, forceSinglePoint = false) {
       mouse.current.x = x;
       mouse.current.y = y;
-      emitTrail(last.current.x, last.current.y, x, y);
+      if (forceSinglePoint) {
+        last.current.x = x;
+        last.current.y = y;
+      }
+      emitTrail(x, y); // Only emit at the current cursor/touch point
       last.current.x = x;
       last.current.y = y;
     }
@@ -32,53 +36,68 @@ export default function CursorTrail() {
     function onMouseMove(e) {
       onPointer(e.clientX, e.clientY);
     }
+    function onTouchStart(e) {
+      if (e.touches && e.touches.length > 0) {
+        const touch = e.touches[0];
+        isTouching.current = true;
+        onPointer(touch.clientX, touch.clientY, true);
+      }
+    }
     function onTouchMove(e) {
       if (e.touches && e.touches.length > 0) {
         const touch = e.touches[0];
-        onPointer(touch.clientX, touch.clientY);
+        onPointer(touch.clientX, touch.clientY, true);
       }
     }
+    function onTouchEnd() {
+      isTouching.current = false;
+    }
     window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("touchstart", onTouchStart, { passive: false });
     window.addEventListener("touchmove", onTouchMove, { passive: false });
+    window.addEventListener("touchend", onTouchEnd);
 
-    function emitTrail(x1, y1, x2, y2) {
-      const dist = Math.hypot(x2 - x1, y2 - y1);
-      const steps = Math.max(2, Math.floor(dist / 2));
-      for (let i = 0; i < steps; i++) {
-        const t = i / steps;
-        const x = x1 + (x2 - x1) * t;
-        const y = y1 + (y2 - y1) * t;
-        const hue = (Date.now() / 7 + i * 10) % 360;
-        trails.current.push({
-          x,
-          y,
-          hue,
-          alpha: 1,
-          life: 0,
-          maxLife: 18 + Math.random() * 10,
-          width: 2.2 + Math.random() * 0.7, // slightly thinner
-        });
-      }
+    function emitTrail(x, y) {
+      // Emit a new head point at the cursor/touch
+      trails.current.push({
+        x,
+        y,
+        hue: (Date.now() / 7) % 360,
+        alpha: 1,
+        life: 0,
+        maxLife: 38 + Math.random() * 18,
+        width: 13 + Math.random() * 3, // thick at the head
+      });
     }
 
     function draw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      for (let i = trails.current.length - 1; i >= 0; i--) {
-        const t = trails.current[i];
-        t.life++;
-        t.alpha = Math.max(0, 1 - t.life / t.maxLife);
-        // Draw slightly thinner glowing line (smoke wisp)
+      // Draw a smooth, fading, rocket-like trail
+      for (let i = 1; i < trails.current.length; i++) {
+        const t1 = trails.current[i - 1];
+        const t2 = trails.current[i];
+        // Fade and thin out as the trail ages
+        const fade = Math.pow(1 - t2.life / t2.maxLife, 1.5);
+        const width = t2.width * fade + 2;
         ctx.save();
-        ctx.globalAlpha = t.alpha * 0.5;
+        const grad = ctx.createLinearGradient(t1.x, t1.y, t2.x, t2.y);
+        grad.addColorStop(0, `hsla(${t1.hue}, 100%, 60%, ${t1.alpha * 0.32})`);
+        grad.addColorStop(1, `hsla(${t2.hue}, 100%, 60%, ${t2.alpha * 0.18})`);
+        ctx.strokeStyle = grad;
+        ctx.shadowColor = `hsla(${t2.hue}, 100%, 80%, 0.7)`;
+        ctx.shadowBlur = 32;
+        ctx.lineWidth = width;
         ctx.beginPath();
-        ctx.arc(t.x, t.y, t.width, 0, Math.PI * 2);
-        ctx.strokeStyle = `hsla(${t.hue}, 100%, 60%, 0.8)`;
-        ctx.shadowColor = `hsla(${t.hue}, 100%, 80%, 0.7)`;
-        ctx.shadowBlur = 18;
-        ctx.lineWidth = t.width;
+        ctx.moveTo(t1.x, t1.y);
+        ctx.lineTo(t2.x, t2.y);
         ctx.stroke();
         ctx.restore();
-        if (t.life > t.maxLife) {
+      }
+      // Update and remove old points
+      for (let i = trails.current.length - 1; i >= 0; i--) {
+        trails.current[i].life++;
+        trails.current[i].alpha = Math.max(0, 1 - trails.current[i].life / trails.current[i].maxLife);
+        if (trails.current[i].life > trails.current[i].maxLife) {
           trails.current.splice(i, 1);
         }
       }
@@ -87,7 +106,9 @@ export default function CursorTrail() {
     draw();
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("touchstart", onTouchStart);
       window.removeEventListener("touchmove", onTouchMove);
+      window.removeEventListener("touchend", onTouchEnd);
       window.removeEventListener("resize", resize);
       cancelAnimationFrame(animationId);
     };
