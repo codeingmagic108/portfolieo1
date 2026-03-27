@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import "./cursorTrail.css";
 
-// Sleek, slightly thinner, swirling, neon smoke-like cursor trail
+// Sleek, slightly thinner, swirling, neon smoke-like cursor trail with mobile touch support
 export default function CursorTrail() {
   const canvasRef = useRef(null);
   const trails = useRef([]);
@@ -21,14 +21,25 @@ export default function CursorTrail() {
     resize();
     window.addEventListener("resize", resize);
 
+    function onPointer(x, y) {
+      mouse.current.x = x;
+      mouse.current.y = y;
+      emitTrail(last.current.x, last.current.y, x, y);
+      last.current.x = x;
+      last.current.y = y;
+    }
+
     function onMouseMove(e) {
-      mouse.current.x = e.clientX;
-      mouse.current.y = e.clientY;
-      emitTrail(last.current.x, last.current.y, e.clientX, e.clientY);
-      last.current.x = e.clientX;
-      last.current.y = e.clientY;
+      onPointer(e.clientX, e.clientY);
+    }
+    function onTouchMove(e) {
+      if (e.touches && e.touches.length > 0) {
+        const touch = e.touches[0];
+        onPointer(touch.clientX, touch.clientY);
+      }
     }
     window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("touchmove", onTouchMove, { passive: false });
 
     function emitTrail(x1, y1, x2, y2) {
       const dist = Math.hypot(x2 - x1, y2 - y1);
@@ -76,6 +87,7 @@ export default function CursorTrail() {
     draw();
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("touchmove", onTouchMove);
       window.removeEventListener("resize", resize);
       cancelAnimationFrame(animationId);
     };
