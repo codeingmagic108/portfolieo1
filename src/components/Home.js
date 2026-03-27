@@ -1,7 +1,6 @@
 import React from 'react'
 import './home.css';
 import img1 from './dheeraj5.png'
-import{Link} from 'react-router-dom'
 
 export default function Home() {
   return (

@@ -8,6 +8,7 @@ import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import Privacypolicy from './components/Privacypolicy';
 import Accessiblitystatement from './components/Accessiblitystatement';
+import CursorTrail from './CursorTrail';
 
 
 
@@ -15,6 +16,7 @@ function App() {
   return (
    <>
    <Router>
+      <CursorTrail />
     
       <div>
          <Navbar/>
