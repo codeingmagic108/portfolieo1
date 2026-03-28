@@ -9,8 +9,8 @@ export default function Home() {
     <div className={`about${isDark ? ' dark-mode' : ''}`}>
       <div className="about-box">
         <span className="left">
-          <span className="h11">Hello</span><br />
-          <span className="h22">I’m Dheeraj</span><br />
+          <span className="h11 h10">Hi, I'm </span><span className="h11 h111">Dheeraj</span><br />
+          <span className="h22">MERN Stack Developer & Tech Enthusiast</span><br />
           <div className="text">
             Building responsive, user-friendly websites with clean code and creative flair. I'm a passionate
             <span className="typeing-text">web developer...</span>

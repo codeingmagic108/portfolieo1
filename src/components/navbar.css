@@ -85,7 +85,7 @@
     margin-right: 1.2rem;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 720px) {
     .navbar{
         backdrop-filter:none;
     }
@@ -126,14 +126,31 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-@media (width<320px) {
-    .navbar-logo{
+  
+@media (width<500px) {
+   .navbar-logo{
         font-size: 1rem;
     }
-}
-@media (width<254px) {
+}   
+
+@media (width<400px) {
+   .navbar-logo{
+        font-size: 0.9rem;
+    }
+}   
+@media (width<320px) {
     .navbar-logo{
-        font-size: 5vw;
+        font-size: 0.8rem;
+    }
+}
+@media (width<281px) {
+    .navbar-logo{
+        font-size: 0.7rem;
+    }
+}
+@media (width<270px) {
+    .navbar-logo{
+        font-size: 0.5rem;
     }
 }
 
