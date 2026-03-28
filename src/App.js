@@ -1,5 +1,6 @@
 import './App.css';
-import { HashRouter as Router, Routes, Route} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Resume from './components/Resume';
@@ -13,13 +14,31 @@ import CursorTrail from './CursorTrail';
 
 
 function App() {
+  // Persist dark mode in localStorage
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('darkMode');
+      return stored === 'true';
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
+
   return (
    <>
    <Router>
       <CursorTrail />
     
       <div>
-         <Navbar/>
+         <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />

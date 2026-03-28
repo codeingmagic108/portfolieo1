@@ -67,16 +67,33 @@
     display: inline-block;
     vertical-align: middle;
     margin-left: .3em;
-    color: #3a3a6c;
     font-weight: 600;
     font-family: 'Fira Mono', 'Consolas', monospace;
     font-size: inherit;
     line-height: inherit;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 2.5px solid #3a3a6c;
+    border-right: 3.5px solid #3a3a6c;
     width: 14ch;
-    animation: typing 2.8s steps(14, end) 0.5s infinite normal both, blink 0.8s step-end infinite alternate;
+    animation: typing 2.8s steps(14, end) 0.5s infinite normal both, blink 0.8s step-end infinite alternate, gradient-typing 4s linear infinite;
+    background: linear-gradient(90deg, #ff6a00, #ffb800, #00ffb8, #00b8ff, #6a00ff, #ff00b8, #ff6a00);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@keyframes gradient-typing {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 
@@ -106,6 +123,10 @@
     border-radius: 50%;
     position: relative;
     /* margin-top:1vh; */
+}
+
+body.dark-mode .about .about-box .right img {
+    border: 2px solid #fff !important;
 }
 @media(width<3300px){
     .about .about-box .left .text{
@@ -340,4 +361,15 @@
 .about .about-box .left{
     font-size:.7em;
 }
+}
+
+/* Make dark mode less black */
+.about.dark-mode, body.dark-mode .about {
+    background-color: #2d2d36 !important;
+}
+.about-box, .about-box .left, .about-box .right {
+    transition: background 0.3s, color 0.3s;
+}
+body.dark-mode .about-box .left, body.dark-mode .about-box .right, body.dark-mode .about-box {
+    color: #fff !important;
 }

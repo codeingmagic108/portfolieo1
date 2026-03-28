@@ -2,6 +2,11 @@
 .resume {
     width:100%;
     padding:3vh 13vw 3vh 13vw;
+    background-color: #EEEEEE;
+}
+
+body.dark-mode .resume {
+    background-color: #2d2d36 !important;
 }
 .resume h1{
     width:100%;

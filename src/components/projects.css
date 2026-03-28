@@ -3,6 +3,11 @@
     width:100%;
     padding:3vh 13vw 3vh 13vw;
     /* text-align: center; */
+    background-color: #EEEEEE;
+}
+
+body.dark-mode .projects {
+    background-color: #2d2d36 !important;
 }
 .projects h1{
     width:100%;

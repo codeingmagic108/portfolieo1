@@ -3,8 +3,10 @@ import './home.css';
 import img1 from './dheeraj5.png'
 
 export default function Home() {
+  // Add dark mode class to about div if body has dark-mode
+  const isDark = typeof document !== 'undefined' && document.body.classList.contains('dark-mode');
   return (
-    <div className="about">
+    <div className={`about${isDark ? ' dark-mode' : ''}`}>
       <div className="about-box">
         <span className="left">
           <span className="h11">Hello</span><br />

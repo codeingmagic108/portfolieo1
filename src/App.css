@@ -68,4 +68,62 @@
   to {
     transform: rotate(360deg);
   }
-} */
+}
+
+/* Professional anchor tag styles for all modes */
+a, .footer-a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 1.5px solid transparent;
+}
+a:hover, .footer-a:hover {
+  color: #1e40af;
+  border-bottom: 1.5px solid #1e40af;
+}
+body.dark-mode a, body.dark-mode .footer-a {
+  color: #90cdf4 !important;
+  border-bottom: 1.5px solid transparent;
+}
+body.dark-mode a:hover, body.dark-mode .footer-a:hover {
+  color: #38bdf8 !important;
+  border-bottom: 1.5px solid #38bdf8;
+}
+
+body.dark-mode .home-bg, .dark-mode .home-bg {
+  background: #232323 !important;
+}
+
+.resume-email {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 1.5px solid transparent;
+  font-weight: 500;
+}
+.resume-email:hover {
+  color: #1e40af;
+  border-bottom: 1.5px solid #1e40af;
+}
+body.dark-mode .resume-email {
+  color: #90cdf4 !important;
+  border-bottom: 1.5px solid transparent;
+}
+body.dark-mode .resume-email:hover {
+  color: #38bdf8 !important;
+  border-bottom: 1.5px solid #38bdf8;
+}
+
+.contact-info i {
+  color: #2563eb;
+  transition: color 0.2s;
+}
+.contact-info i:hover {
+  color: #1e40af;
+}
+body.dark-mode .contact-info i {
+  color: #90cdf4 !important;
+}
+body.dark-mode .contact-info i:hover {
+  color: #38bdf8 !important;
+}

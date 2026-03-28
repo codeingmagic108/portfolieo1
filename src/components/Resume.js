@@ -11,7 +11,7 @@ export default function Resume() {
           <li><number>+91 7070109201</number></li>
           <li><i class="fa-brands fa-github"></i><a href="https://github.com/codeingmagic108" target="_blank" rel="noreferrer" >GitHub</a></li>
           <li><i class="fa-brands fa-linkedin  circle12"></i><a href="https://www.linkedin.com/in/dheeraj-kumar-380038252" target="_blank" rel="noreferrer" >LinkedIn</a></li>
-          <li><i class="fa-solid fa-envelope"></i><email>dheerajkumarcpr94@gmail.com</email></li>
+          <li><i class="fa-solid fa-envelope"></i><span className="resume-email">dheerajkumarcpr94@gmail.com</span></li>
         </ul>
         <h2>CAREER OBJECTIVE</h2>
         <hr class='hrr1'/>
